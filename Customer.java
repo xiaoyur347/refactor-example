@@ -13,7 +13,7 @@ class Customer {
 	public String getName() {
 		return _name;
 	}
-	public double getTotalCharge() {
+	private double getTotalCharge() {
 		double result = 0;
 		Enumeration rentals = _rentals.elements();
 		while (rentals.hasMoreElements()) {
@@ -22,7 +22,7 @@ class Customer {
 		}
 		return result;
 	}
-	public int getTotalFrequentRenterPoints() {
+	private int getTotalFrequentRenterPoints() {
 		int result = 0;
 		Enumeration rentals = _rentals.elements();
 		while (rentals.hasMoreElements()) {
